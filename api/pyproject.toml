@@ -7,8 +7,17 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+fastapi = "^0.105.0"
+sqlalchemy = "^2.0.23"
+ruff = "*"
+mypy = "^1.8.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "*"
+pytest-mock = "*"
